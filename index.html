@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Inicio del trabajo final</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body background-color: var(--color)>
+    <div class="container">
+        <ul class="menu">
+            <li><a href="./index.html">Menú de Inicio</a></li>
+            <li><a onclick="openModal()">Más información con modal</a></li>
+            <li><a href="./ajustes.html">Ajustes</a></li>
+            <li><a href="./carpetaSoldadito/soldadito.xml">XML Soldadito</a></li>
+            <li><a href="./tres en raya.html">Tres en raya</a></li>
+        </ul>
+    </div>
+
+    <div class="nombre-usuario">
+        <h3>Nombre de usuario:</h3>
+        <div id="nombreUsuario"></div>
+    </div>
+
+    <div class="article">
+        <h2>Los continentes del mundo</h2>
+        <p>
+            Los continentes son grandes extensiones de tierra que se distribuyen en el planeta. En la Tierra, hay seis
+            continentes reconocidos: Asia, África, América, Europa, Oceanía y la Antártida.
+        </p>
+        <p>
+            Asia es el continente más grande y poblado, hogar de diversas culturas y civilizaciones milenarias. Sus
+            climas van desde los desiertos de la peninsula arabica y el gobi hasta la estepa rusa, pasando
+            por el Himalaya y las selvas tropicales chinas e indias.
+        </p>
+        <p>África destaca por su rica diversidad cultural, paisajes impresionantes y una fauna única. Es un continente
+            que vive en un verano constante y la mayoria de sus climas son desierto, savana y selva. </p>
+
+        <p>América es el
+            continente donde se encuentra una gran variedad de países, desde Canadá hasta Chile, con una amplia mezcla
+            de culturas y paisajes espectaculares. De esta forma encontramos maravillas como el cañón del colorado o las
+            cataratas del iguazu, lugares magicos que te atraparan por su belleza.</p>
+        <p>
+            Europa es conocida por su historia, arte y arquitectura fascinantes, albergando ciudades icónicas como
+            París, Roma y Londres. El viejo continente tiene paises que se pueden recorrer en pocas horas, formando una
+            gran sopa cultural como pocas en el mundo.
+        </p>
+        <p>Oceanía se compone de diversas islas y países, incluyendo Australia y Nueva Zelanda,
+            que cuentan con una increíble belleza natural y una rica cultura aborigen.</p>
+
+        <p>La Antártida, en cambio, es un
+            continente cubierto por hielo y reserva natural, habitada principalmente por científicos y exploradores.</p>
+        <p>
+            Cada continente tiene su propia identidad y características únicas, desde su geografía hasta su historia y
+            sociedad. Explorar los continentes del mundo nos permite apreciar la diversidad y la interconexión de
+            nuestro planeta.
+        </p>
+    </div>
+    <div class="modal-overlay" id="modalOverlay" style="display: none;">
+        <div class="modal-content">
+            <h2>Información adicional</h2>
+            <p>Carlos Rodríguez Pinazo 1DAW Tarde</br>Requisitos:</br>1:Entregado a tiempo
+                </br>2:URL funciona y se han adjuntado los archivos en la entrega
+                </br>3:El menú se ve igual en todos los HTML y se abre el modal
+                </br>4:Incluye Menú principal, Ajustes, Tres en raya, XML y modal
+                </br>5:Las paginas el color de fondo y el nombre de usuario, estos se aplican a todas  y se guardan al recargar
+                </br>6:El modal funciona e incluye donde se encuentran los requisitos
+                </br>7:Se usa el trabajo XML del soldadito, junto a su XSL
+                </br>8:Se usa javascript para la lectura y escritura del color de fondo y el nombre de usuario. Además se usa en el modal y el tres en raya.
+                </br>9:Se incluye  los elementos html.
+                </br>10:Funciona el viewport.
+            </p>
+            <button onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./estilos.css" type="text/css" />
+  <title>Tres en Raya</title>
+</head>
+
+<body>
+  <div class="container">
+    <ul class="menu">
+      <li><a href="./index.html">Menú de Inicio</a></li>
+      <li><a onclick="openModal()">Más información con modal</a></li>
+      <li><a href="./ajustes.html">Ajustes</a></li>
+      <li><a href="./carpetaSoldadito/soldadito.xml">XML Soldadito</a></li>
+      <li><a href="./tres en raya.html">Tres en raya</a></li>
+    </ul>
+  </div>
+
+  <div class="nombre-usuario">
+    <h3>Nombre de usuario:</h3>
+    <div id="nombreUsuario"></div>
+</div>
+
+  <div class="board-container">
+    <table>
+      <tr>
+        <td>
+          <div class="casilla" data-fila="0" data-columna="0"></div>
+        </td>
+        <td>
+          <div class="casilla" data-fila="0" data-columna="1"></div>
+        </td>
+        <td>
+          <div class="casilla" data-fila="0" data-columna="2"></div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="casilla" data-fila="1" data-columna="0"></div>
+        </td>
+        <td>
+          <div class="casilla" data-fila="1" data-columna="1"></div>
+        </td>
+        <td>
+          <div class="casilla" data-fila="1" data-columna="2"></div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="casilla" data-fila="2" data-columna="0"></div>
+        </td>
+        <td>
+          <div class="casilla" data-fila="2" data-columna="1"></div>
+        </td>
+        <td>
+          <div class="casilla" data-fila="2" data-columna="2"></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="modal-overlay" id="modalOverlay" style="display: none;">
+    <div class="modal-content">
+      <h2>Información adicional</h2>
+      <p>Carlos Rodríguez Pinazo 1DAW Tarde, Tematica del Proyecto: Paises y continentes.</p>
+      <button onclick="closeModal()">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

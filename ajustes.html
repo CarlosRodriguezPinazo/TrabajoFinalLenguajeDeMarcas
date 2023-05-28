@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes del trabajo final</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <ul class="menu">
+            <li><a href="./index.html">Menú de Inicio</a></li>
+            <li><a onclick="openModal()">Más información con modal</a></li>
+            <li><a href="./ajustes.html">Ajustes</a></li>
+            <li><a href="./carpetaSoldadito/soldadito.xml">XML Soldadito</a></li>
+            <li><a href="./tres en raya.html">Tres en raya</a></li>
+        </ul>
+    </div>
+
+    <div class="nombre-usuario">
+        <h3>Nombre de usuario:</h3>
+        <div id="nombreUsuario"></div>
+    </div>
+
+    <div class="ajustes">
+        <h1>Ajustes</h1>
+        <input type="text" id="nombreUsuarioInput" placeholder="Ingrese su nombre de usuario">
+        <button onclick="guardarNombreUsuario()">Guardar</button>
+    </div>
+
+
+    <div class="ajustes"> 
+        <input type="color" id="colorInput">
+        <button onclick="changeBackgroundColor()">Cambia el color del fondo</button>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay" style="display: none;">
+        <div class="modal-content">
+            <h2>Información adicional</h2>
+            <p>Carlos Rodríguez Pinazo 1DAW Tarde, Tematica del Proyecto: Paises y continentes.</p>
+            <button onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

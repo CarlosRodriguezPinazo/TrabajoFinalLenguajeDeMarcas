@@ -1,0 +1,20 @@
+body {
+  counter-reset: section; 
+}
+
+p::before{
+  counter-increment: section;
+  content: "Section " counter(section) ": "; 
+  color:blue !important;
+  background-color:yellow;
+  display: inline-block;
+}
+h4{
+	color:red;
+	display: block;
+}
+h2{
+	font-size: 50px;
+	background-color:green;
+	display: block;
+}
